@@ -1,20 +1,17 @@
-[![made with Muse](https://img.shields.io/badge/made%20with-Muse-blueviolet)](https://muse.ai) [![agent-ready](https://img.shields.io/badge/agent-ready-blue)](https://make.fun/) [![powered by make.fun](https://img.shields.io/badge/powered%20by-make.fun-orange)](https://make.fun/)
+# makefun-token-radar-01
 
-# Token Radar
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/zhaojiaboyi/makefun-token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/zhaojiaboyi/makefun-token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
-Token Radar — 226 pre-token protocols ranked by implied value.
+A token launch radar: 226 pre-token protocols ranked by implied value, with a farm plan for each. The model (radar-2) scores every protocol from the snapshot's own figures — TVL, seven-day growth, age with no token, and chain reach — and the dashboard re-runs the same function live, with a sandbox to ask what-if. Run main.ts and it writes the board, the dashboard data, three screenshots and the dossier.
 
-**Bounty:** https://make.fun/bounty/token-radar-01
-**Referral:** use `d5g22vsp` when you join make.fun.
+## Run it
 
-## Run locally
-
-```bash
+```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json>
 ```
 
-Reads the DefiLlama protocol snapshot from the CLI `--input` path (defaults to `input/snapshot.json` if present) and writes the board (`board.json`), the dashboard bundle (`data.js`), and a dossier (`dossier.json`) to the output directory.
+---
 
-## How the board is built
-
-`lib/model.ts` scores every pre-token protocol by implied value: TVL, 7-day growth, age with no token, and chain count, combined with the radar-2 model. The 40-protocol watchlist (TVL ≥ $50M) is covered in full; the early radar adds every remaining pre-token protocol below the floor, ranked by the same model.
+<sub>Entered on [make.fun](https://make.fun/?ref=d5g22vsp&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
